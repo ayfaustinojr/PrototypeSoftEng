@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:background="@drawable/fakemoneyscanner_ui_non1"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+        <Button
+            android:id="@+id/helpBtn"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="HELP"
+            />
+        <Button
+            android:id="@+id/FQSBtn"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="FQS"
+            />
+        <Button
+            android:id="@+id/AppInfoBtn"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="App Info"
+            />
+        <Button
+            android:id="@+id/InfoBtn"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="BANKNOTE INFO"
+            />
+        <Button
+            android:id="@+id/ContactBtn"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="Contact Us"
+            />
+    </LinearLayout>
+</LinearLayout>
