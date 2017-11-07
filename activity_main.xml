@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:opencv="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/fakemoneyscanner_ui_non2"
+    tools:context="me.janebot.myapplication.MainActivity">
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/selectBtn"
+        android:layout_alignTop="@+id/openBtn"
+        android:layout_toEndOf="@+id/openBtn"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/gallery"
+        />
+
+    <Button
+        android:id="@+id/openBtn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/camera"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/aboutBtn"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/about"
+        android:layout_alignTop="@+id/selectBtn"
+        android:layout_toEndOf="@+id/selectBtn"
+        android:layout_marginStart="13dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignEnd="@+id/selectBtn"
+        android:layout_alignStart="@+id/selectBtn"
+        android:text="PICK FROM \nGALLERY"
+        android:textAlignment="center"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/openBtn"
+        android:layout_alignStart="@+id/openBtn"
+        android:layout_below="@+id/openBtn"
+        android:layout_marginTop="12dp"
+        android:text="OPEN \nCAMERA"
+        android:textAlignment="center"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView3"
+        android:layout_alignBottom="@+id/textView3"
+        android:layout_alignEnd="@+id/aboutBtn"
+        android:layout_alignStart="@+id/aboutBtn"
+        android:text="ABOUT"
+        android:textAlignment="center"
+        android:textColor="@android:color/black" />
+    <org.opencv.android.JavaCameraView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:visibility="gone"
+    android:id="@+id/HelloOpenCvView"
+    opencv:show_fps="true"
+    opencv:camera_id="any" />
+</RelativeLayout>
